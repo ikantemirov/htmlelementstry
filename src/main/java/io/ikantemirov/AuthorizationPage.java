@@ -8,7 +8,7 @@ import io.qameta.htmlelements.extension.page.BaseUrl;
 @BaseUrl("https://vk.com/")
 public interface AuthorizationPage extends WebPage{
 
-    @FindBy("//input[@id='index_login_form']")
+    @FindBy("//form[@id='index_login_form']")
     IndexLoginForm indexLoginForm();
 
 }
