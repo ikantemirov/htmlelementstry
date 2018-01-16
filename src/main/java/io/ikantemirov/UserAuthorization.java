@@ -23,5 +23,4 @@ public class UserAuthorization{
     public AuthorizationPage getPage() {
         return page;
     }
-
 }

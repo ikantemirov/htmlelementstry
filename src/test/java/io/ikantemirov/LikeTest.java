@@ -1,11 +1,9 @@
 package io.ikantemirov;
 
 import io.qameta.htmlelements.*;
-import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
-import static java.lang.Integer.parseInt;
 import static ru.yandex.qatools.matchers.webdriver.TextMatcher.text;
 
 public class LikeTest {
@@ -16,7 +14,6 @@ public class LikeTest {
     private WebPageFactory factory = new WebPageFactory();
     private UserPage page;
     private LikeClicker likeClicker;
-
 
     @Test
     public void shouldCountLike() {
@@ -31,5 +28,4 @@ public class LikeTest {
         page = factory.get(ruleChrome.getDriver(), UserPage.class);
         page.postContent().postLikeCount().should(text(Integer.toString(likeClicker.getLikeCounter() -1)));
     }
-
 }

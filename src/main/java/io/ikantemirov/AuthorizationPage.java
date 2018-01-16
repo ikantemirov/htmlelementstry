@@ -9,5 +9,4 @@ public interface AuthorizationPage extends WebPage{
 
     @FindBy("//form[@id='index_login_form']")
     IndexLoginForm indexLoginForm();
-
 }

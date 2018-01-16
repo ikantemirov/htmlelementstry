@@ -27,6 +27,4 @@ public class AuthorizationPageTest {
         page = userAuthorization.getPage();
         page.isAt(equalTo("https://vk.com/feed"));
     }
-
-
 }

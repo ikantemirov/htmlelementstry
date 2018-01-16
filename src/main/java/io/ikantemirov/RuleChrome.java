@@ -21,5 +21,4 @@ public class RuleChrome extends ExternalResource {
     protected void after() {
         driver.quit();
     }
-
 }

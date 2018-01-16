@@ -14,5 +14,4 @@ public interface IndexLoginForm extends HtmlElement {
 
     @FindBy(".//button[@id='index_login_button']")
     HtmlElement indexLoginButton();
-
 }
